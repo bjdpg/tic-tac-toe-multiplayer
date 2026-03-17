@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🎮 Tic Tac Toe</h1>
+
+  <div class="info">
+    <p id="roomInfo"></p>
+    <p id="players"></p>
+    <h2 id="status"></h2>
+  </div>
+
+  <div id="board"></div>
+
+  <div class="controls">
+    <button onclick="createRoom()">Create Room</button>
+    <button onclick="restartGame()">Restart</button>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
